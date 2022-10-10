@@ -16,18 +16,18 @@ export function FormCreateTask({ CreateNewTask }: FormProps) {
 
   return (
     <Form>
-      <div>
-        <Plus size={22} />
+      <label>
+        <Plus size={20} />
         <input
           value={task}
           required
           placeholder="Criar uma nova tarefa"
           onChange={(e) => setTask(e.target.value)}
         />
-      </div>
+      </label>
 
       <Button type="submit" onClick={haldleClickButton} disabled={!task}>
-        <Plus size={22} />
+        <Plus size={16} />
         Criar
       </Button>
     </Form>

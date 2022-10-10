@@ -28,24 +28,23 @@ export const Container = styled.div<CheckedProps>`
 
     text-decoration: ${(props) => (props.check ? 'line-through' : 'none')};
   }
+`
+export const Button = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  border-radius: 4px;
+  padding: 0.25rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--gray-100);
 
-    border-radius: 4px;
-    padding: 0.25rem;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    color: var(--gray-100);
+  transition: color 0.1s;
 
-    transition: color 0.2s;
-
-    &:hover {
-      color: var(--white);
-      background: var(--gray-600);
-    }
+  &:hover {
+    color: var(--red-500);
+    /* background: var(--gray-600); */
   }
 `
