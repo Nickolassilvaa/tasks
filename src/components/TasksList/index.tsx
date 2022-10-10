@@ -1,7 +1,7 @@
 import { Trash } from 'phosphor-react'
 import { useState } from 'react'
 import { TaskProps } from '../../@types/Task'
-import { Container } from './styles'
+import { Button, Container } from './styles'
 
 interface ListProps {
   item: TaskProps
@@ -23,9 +23,9 @@ export function TaskList({ item, removeTask }: ListProps) {
     <Container check={isChecked}>
       <input type="checkbox" checked={isChecked} onChange={handleCheckbox} />
       <label>{item.name}</label>
-      <button onClick={handleClickButton}>
+      <Button onClick={handleClickButton}>
         <Trash size={22} />
-      </button>
+      </Button>
     </Container>
   )
 }
