@@ -12,7 +12,10 @@ export const GlobalStyle = createGlobalStyle`
         --gray-800: #202024;
         --gray-900: #121214;
 
-        --green-300: #00B37E;
+        
+        --purple-dark: #6833e4;
+        --purple-light: #734bd1;
+
         --green-500: #00875F;
         --green-700: #015F43;
 
@@ -27,7 +30,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     :focus {
-        outline: 1px solid var(--green-500);
+        outline: 1px solid var(--purple-light);
         outline-offset: 2px;
     }
 
