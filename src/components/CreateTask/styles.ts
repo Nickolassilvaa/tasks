@@ -16,7 +16,7 @@ export const Form = styled.form`
     padding: 0.75rem 0.5rem;
 
     &:focus-within {
-      outline: 1px solid var(--green-500);
+      outline: 1px solid var(--purple-light);
       outline-offset: 2px;
     }
 
@@ -57,7 +57,7 @@ export const Button = styled.button`
   line-height: 1.6;
   cursor: pointer;
 
-  background: var(--green-500);
+  background: var(--purple-dark);
   color: var(--white);
 
   &:disabled {
@@ -66,6 +66,6 @@ export const Button = styled.button`
   }
 
   &:not(:disabled):hover {
-    background: var(--green-700);
+    background: var(--purple-light);
   }
 `
