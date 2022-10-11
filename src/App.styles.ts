@@ -2,8 +2,12 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   max-width: 720px;
+  min-height: 100vh;
   margin: 0 auto;
-  padding: 0 0.5rem;
+  padding: 0 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `
 
 export const Header = styled.header`
@@ -40,14 +44,23 @@ export const CountContainer = styled.div`
     gap: 0.5rem;
 
     font-size: 1rem;
-    line-height: 1.6;
     font-weight: 700;
 
     span {
       background: var(--gray-500);
-      padding: 0.25rem 0.5rem;
+      padding: 0 0.25rem;
       border-radius: 8px;
       color: var(--gray-800);
     }
   }
+`
+
+export const Footer = styled.footer`
+  width: 100%;
+  padding: 2.5rem 0;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
+
+  font-family: 'Roboto Mono', monospace;
 `
